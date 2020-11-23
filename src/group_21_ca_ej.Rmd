@@ -1,0 +1,34 @@
+---
+title: "Group 21 CA pollution burden"
+author: "Sam Fearer"
+date: "11/23/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(here)
+
+```
+
+```{r}
+#reading in the data and cleaning up column titles
+ces <-  read_csv(here("data", "ces3demographics.csv")) %>% 
+  clean_names()
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
