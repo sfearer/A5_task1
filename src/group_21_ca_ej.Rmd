@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(janitor)
 library(here)
+library(hexbin)
 ```
 
 ```{r}
@@ -23,6 +24,11 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   geom_point()
 ```
 
+```{r}
+ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
+  geom_hex() +
+  labs(x = "White Percent", y = "CES 3.0 Score")
+```
 
 
 
