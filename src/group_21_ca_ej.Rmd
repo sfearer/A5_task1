@@ -34,6 +34,7 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   theme_minimal()
 ```
 
+There is a clear negative trend between the percent of a census tract population identifying as white and the aggregate pollution burden (CES 3.0 Score).
 
 
 
