@@ -27,7 +27,9 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
 ```{r}
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   geom_hex() +
-  labs(x = "White Percent", y = "CES 3.0 Score")
+  labs(x = "White Percent", y = "CES 3.0 Score") +
+  scale_fill_gradient(low = "darkorchid4", high = "magenta") +
+  theme_minimal()
 ```
 
 
