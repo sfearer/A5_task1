@@ -20,15 +20,17 @@ ces <-  read_csv(here("data", "ces3demographics.csv")) %>%
 ```
 
 ```{r}
+#visualizing the data: scatterplot
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   geom_point()
 ```
 
 ```{r}
+#visualizing the data: hexbin
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   geom_hex() +
-  labs(x = "White Percent", y = "CES 3.0 Score") +
-  scale_fill_gradient(low = "darkorchid4", high = "magenta") +
+  labs(title = "CES Scores and White Population Demographics", x = "White Percent", y = "CES 3.0 Score") +
+  scale_fill_gradient(low = "navy", high = "orange") +
   theme_minimal()
 ```
 
